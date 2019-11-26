@@ -59,7 +59,7 @@ int main(void)
     FATFS drive;
     FIL file;
     UINT actualLength;
-    char data[] = "My name is Jason!";
+    char data[] = "Why is the pic24 so annoying?!";
     if( SD_SPI_IsMediaPresent() == false)
     {
         return 1 ;
@@ -67,7 +67,7 @@ int main(void)
 
     if (f_mount(&drive,"0:",1) == FR_OK)
     {
-        if (f_open(&file, "JASON.TXT", FA_WRITE | FA_CREATE_NEW ) == FR_OK)
+        if (f_open(&file, "TEST.TXT", FA_WRITE | FA_CREATE_NEW ) == FR_OK)
         {
             f_write(&file, data, sizeof(data)-1, &actualLength );
             f_close(&file);

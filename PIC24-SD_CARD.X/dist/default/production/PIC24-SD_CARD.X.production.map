@@ -86,12 +86,12 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x194           0x25e  (606)
-.const                       0x394               0x1b4           0x28e  (654)
-.text                        0x548              0x318a          0x4a4f  (19023)
-.dinit                      0x36d2                0x36            0x51  (81)
-.text                       0x3708                0x62            0x93  (147)
+.const                       0x394               0x1c0           0x2a0  (672)
+.text                        0x554              0x318a          0x4a4f  (19023)
+.dinit                      0x36de                0x36            0x51  (81)
+.text                       0x3714                0x62            0x93  (147)
 
-                 Total "program" memory used (bytes):         0x501f  (20511) 15%
+                 Total "program" memory used (bytes):         0x5031  (20529) 15%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -141,67 +141,67 @@ External Symbols in Program Memory (by address):
                   0x000358                  ___udivsi3
                   0x000378                  _memcpy
                   0x000386                  _memset
-                  0x0004ce                  _spiMaster
-                  0x001e6c                  _f_mount
-                  0x001ed2                  _f_open
-                  0x0021ca                  _f_read
-                  0x00244e                  _f_write
-                  0x002750                  _f_sync
-                  0x00282a                  _f_close
-                  0x002854                  _f_chdrive
-                  0x002874                  _f_chdir
-                  0x0028e0                  _SD_SPI_IsMediaPresent
-                  0x0028e8                  _SD_SPI_GetSectorSize
-                  0x0028f0                  _SD_SPI_GetSectorCount
-                  0x0028fa                  _SD_SPI_SectorRead
-                  0x002966                  _SD_SPI_SectorWrite
-                  0x0029d2                  _SD_SPI_IsMediaInitialized
-                  0x0029e4                  _SD_SPI_IsWriteProtected
-                  0x002a1c                  _SD_SPI_MediaInitialize
-                  0x003326                  _spi1_close
-                  0x00332e                  _spi1_open
-                  0x003384                  _spi1_exchangeByte
-                  0x00339e                  _spi1_exchangeBlock
-                  0x0033d0                  _spi1_writeBlock
-                  0x0033fe                  _spi1_readBlock
-                  0x00342e                  _spi1_writeByte
-                  0x00343a                  _spi1_readByte
-                  0x003444                  _spi1_isr
-                  0x003460                  _spi1_setSpiISR
-                  0x00346c                  _disk_status
-                  0x0034a8                  _disk_initialize
-                  0x0034d2                  _disk_read
-                  0x00350c                  _disk_write
-                  0x003546                  _disk_ioctl
-                  0x003564                  _PIN_MANAGER_Initialize
-                  0x0035de                  _main
-                  0x00363e                  _FatFsDemo_Tasks
-                  0x003698                  _CLOCK_Initialize
-                  0x003708                  _SDFAST_open
-                  0x003712                  _SDSLOW_open
-                  0x00371c                  _spi_master_open
-                  0x003750                  _SYSTEM_Initialize
-                  0x00375c                  _OSCILLATOR_Initialize
-                  0x003764                  _INTERRUPT_Initialize
+                  0x0004fa                  _spiMaster
+                  0x001e78                  _f_mount
+                  0x001ede                  _f_open
+                  0x0021d6                  _f_read
+                  0x00245a                  _f_write
+                  0x00275c                  _f_sync
+                  0x002836                  _f_close
+                  0x002860                  _f_chdrive
+                  0x002880                  _f_chdir
+                  0x0028ec                  _SD_SPI_IsMediaPresent
+                  0x0028f4                  _SD_SPI_GetSectorSize
+                  0x0028fc                  _SD_SPI_GetSectorCount
+                  0x002906                  _SD_SPI_SectorRead
+                  0x002972                  _SD_SPI_SectorWrite
+                  0x0029de                  _SD_SPI_IsMediaInitialized
+                  0x0029f0                  _SD_SPI_IsWriteProtected
+                  0x002a28                  _SD_SPI_MediaInitialize
+                  0x003332                  _spi1_close
+                  0x00333a                  _spi1_open
+                  0x003390                  _spi1_exchangeByte
+                  0x0033aa                  _spi1_exchangeBlock
+                  0x0033dc                  _spi1_writeBlock
+                  0x00340a                  _spi1_readBlock
+                  0x00343a                  _spi1_writeByte
+                  0x003446                  _spi1_readByte
+                  0x003450                  _spi1_isr
+                  0x00346c                  _spi1_setSpiISR
+                  0x003478                  _disk_status
+                  0x0034b4                  _disk_initialize
+                  0x0034de                  _disk_read
+                  0x003518                  _disk_write
+                  0x003552                  _disk_ioctl
+                  0x003570                  _PIN_MANAGER_Initialize
+                  0x0035ea                  _main
+                  0x00364a                  _FatFsDemo_Tasks
+                  0x0036a4                  _CLOCK_Initialize
+                  0x003714                  _SDFAST_open
+                  0x00371e                  _SDSLOW_open
+                  0x003728                  _spi_master_open
+                  0x00375c                  _SYSTEM_Initialize
+                  0x003768                  _OSCILLATOR_Initialize
+                  0x003770                  _INTERRUPT_Initialize
 
 External Symbols in Program Memory (by name):
 
-                  0x003698                  _CLOCK_Initialize
-                  0x00363e                  _FatFsDemo_Tasks
-                  0x003764                  _INTERRUPT_Initialize
-                  0x00375c                  _OSCILLATOR_Initialize
-                  0x003564                  _PIN_MANAGER_Initialize
-                  0x003708                  _SDFAST_open
-                  0x003712                  _SDSLOW_open
-                  0x0028f0                  _SD_SPI_GetSectorCount
-                  0x0028e8                  _SD_SPI_GetSectorSize
-                  0x0029d2                  _SD_SPI_IsMediaInitialized
-                  0x0028e0                  _SD_SPI_IsMediaPresent
-                  0x0029e4                  _SD_SPI_IsWriteProtected
-                  0x002a1c                  _SD_SPI_MediaInitialize
-                  0x0028fa                  _SD_SPI_SectorRead
-                  0x002966                  _SD_SPI_SectorWrite
-                  0x003750                  _SYSTEM_Initialize
+                  0x0036a4                  _CLOCK_Initialize
+                  0x00364a                  _FatFsDemo_Tasks
+                  0x003770                  _INTERRUPT_Initialize
+                  0x003768                  _OSCILLATOR_Initialize
+                  0x003570                  _PIN_MANAGER_Initialize
+                  0x003714                  _SDFAST_open
+                  0x00371e                  _SDSLOW_open
+                  0x0028fc                  _SD_SPI_GetSectorCount
+                  0x0028f4                  _SD_SPI_GetSectorSize
+                  0x0029de                  _SD_SPI_IsMediaInitialized
+                  0x0028ec                  _SD_SPI_IsMediaPresent
+                  0x0029f0                  _SD_SPI_IsWriteProtected
+                  0x002a28                  _SD_SPI_MediaInitialize
+                  0x002906                  _SD_SPI_SectorRead
+                  0x002972                  _SD_SPI_SectorWrite
+                  0x00375c                  _SYSTEM_Initialize
                   0x000342                  __AddressError
                   0x000352                  __DefaultInterrupt
                   0x00034a                  __MathError
@@ -212,34 +212,34 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_da
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x0034a8                  _disk_initialize
-                  0x003546                  _disk_ioctl
-                  0x0034d2                  _disk_read
-                  0x00346c                  _disk_status
-                  0x00350c                  _disk_write
-                  0x002874                  _f_chdir
-                  0x002854                  _f_chdrive
-                  0x00282a                  _f_close
-                  0x001e6c                  _f_mount
-                  0x001ed2                  _f_open
-                  0x0021ca                  _f_read
-                  0x002750                  _f_sync
-                  0x00244e                  _f_write
-                  0x0035de                  _main
+                  0x0034b4                  _disk_initialize
+                  0x003552                  _disk_ioctl
+                  0x0034de                  _disk_read
+                  0x003478                  _disk_status
+                  0x003518                  _disk_write
+                  0x002880                  _f_chdir
+                  0x002860                  _f_chdrive
+                  0x002836                  _f_close
+                  0x001e78                  _f_mount
+                  0x001ede                  _f_open
+                  0x0021d6                  _f_read
+                  0x00275c                  _f_sync
+                  0x00245a                  _f_write
+                  0x0035ea                  _main
                   0x000378                  _memcpy
                   0x000386                  _memset
-                  0x003326                  _spi1_close
-                  0x00339e                  _spi1_exchangeBlock
-                  0x003384                  _spi1_exchangeByte
-                  0x003444                  _spi1_isr
-                  0x00332e                  _spi1_open
-                  0x0033fe                  _spi1_readBlock
-                  0x00343a                  _spi1_readByte
-                  0x003460                  _spi1_setSpiISR
-                  0x0033d0                  _spi1_writeBlock
-                  0x00342e                  _spi1_writeByte
-                  0x0004ce                  _spiMaster
-                  0x00371c                  _spi_master_open
+                  0x003332                  _spi1_close
+                  0x0033aa                  _spi1_exchangeBlock
+                  0x003390                  _spi1_exchangeByte
+                  0x003450                  _spi1_isr
+                  0x00333a                  _spi1_open
+                  0x00340a                  _spi1_readBlock
+                  0x003446                  _spi1_readByte
+                  0x00346c                  _spi1_setSpiISR
+                  0x0033dc                  _spi1_writeBlock
+                  0x00343a                  _spi1_writeByte
+                  0x0004fa                  _spiMaster
+                  0x003728                  _spi_master_open
 
 Memory Configuration
 
@@ -1971,73 +1971,73 @@ __c30_signature
  .config_IOL1WAY
                   0x0157f8          0x2 build/default/production/mcc_generated_files/mcc.o
 
-.const              0x8394        0x1b4 load address 0x000394  
+.const              0x8394        0x1c0 load address 0x000394  
  .const             0x8394         0xa0 build/default/production/mcc_generated_files/sd_spi/sd_spi.o
  .const             0x8434         0x9a build/default/production/mcc_generated_files/fatfs/ff.o
- .const             0x84ce         0x28 build/default/production/mcc_generated_files/drivers/spi_master.o
-                    0x84ce                  _spiMaster
- .const             0x84f6         0x20 build/default/production/mcc_generated_files/fatfs/fatfs_demo.o
- .const             0x8516         0x20 build/default/production/main.o
- .const             0x8536         0x12 build/default/production/mcc_generated_files/spi1_driver.o
+ .const             0x84ce         0x2c build/default/production/main.o
+ .const             0x84fa         0x28 build/default/production/mcc_generated_files/drivers/spi_master.o
+                    0x84fa                  _spiMaster
+ .const             0x8522         0x20 build/default/production/mcc_generated_files/fatfs/fatfs_demo.o
+ .const             0x8542         0x12 build/default/production/mcc_generated_files/spi1_driver.o
 
-.text             0x000548       0x318a
- .text            0x000548       0x2398 build/default/production/mcc_generated_files/fatfs/ff.o
-                  0x001e6c                  _f_mount
-                  0x001ed2                  _f_open
-                  0x0021ca                  _f_read
-                  0x00244e                  _f_write
-                  0x002750                  _f_sync
-                  0x00282a                  _f_close
-                  0x002854                  _f_chdrive
-                  0x002874                  _f_chdir
- .text            0x0028e0        0xa46 build/default/production/mcc_generated_files/sd_spi/sd_spi.o
-                  0x0028e0                  _SD_SPI_IsMediaPresent
-                  0x0028e8                  _SD_SPI_GetSectorSize
-                  0x0028f0                  _SD_SPI_GetSectorCount
-                  0x0028fa                  _SD_SPI_SectorRead
-                  0x002966                  _SD_SPI_SectorWrite
-                  0x0029d2                  _SD_SPI_IsMediaInitialized
-                  0x0029e4                  _SD_SPI_IsWriteProtected
-                  0x002a1c                  _SD_SPI_MediaInitialize
- .text            0x003326        0x146 build/default/production/mcc_generated_files/spi1_driver.o
-                  0x003326                  _spi1_close
-                  0x00332e                  _spi1_open
-                  0x003384                  _spi1_exchangeByte
-                  0x00339e                  _spi1_exchangeBlock
-                  0x0033d0                  _spi1_writeBlock
-                  0x0033fe                  _spi1_readBlock
-                  0x00342e                  _spi1_writeByte
-                  0x00343a                  _spi1_readByte
-                  0x003444                  _spi1_isr
-                  0x003460                  _spi1_setSpiISR
- .text            0x00346c         0xf8 build/default/production/mcc_generated_files/fatfs/diskio.o
-                  0x00346c                  _disk_status
-                  0x0034a8                  _disk_initialize
-                  0x0034d2                  _disk_read
-                  0x00350c                  _disk_write
-                  0x003546                  _disk_ioctl
- .text            0x003564         0x7a build/default/production/mcc_generated_files/pin_manager.o
-                  0x003564                  _PIN_MANAGER_Initialize
- .text            0x0035de         0x60 build/default/production/main.o
-                  0x0035de                  _main
- .text            0x00363e         0x5a build/default/production/mcc_generated_files/fatfs/fatfs_demo.o
-                  0x00363e                  _FatFsDemo_Tasks
- .text            0x003698         0x3a build/default/production/mcc_generated_files/clock.o
-                  0x003698                  _CLOCK_Initialize
+.text             0x000554       0x318a
+ .text            0x000554       0x2398 build/default/production/mcc_generated_files/fatfs/ff.o
+                  0x001e78                  _f_mount
+                  0x001ede                  _f_open
+                  0x0021d6                  _f_read
+                  0x00245a                  _f_write
+                  0x00275c                  _f_sync
+                  0x002836                  _f_close
+                  0x002860                  _f_chdrive
+                  0x002880                  _f_chdir
+ .text            0x0028ec        0xa46 build/default/production/mcc_generated_files/sd_spi/sd_spi.o
+                  0x0028ec                  _SD_SPI_IsMediaPresent
+                  0x0028f4                  _SD_SPI_GetSectorSize
+                  0x0028fc                  _SD_SPI_GetSectorCount
+                  0x002906                  _SD_SPI_SectorRead
+                  0x002972                  _SD_SPI_SectorWrite
+                  0x0029de                  _SD_SPI_IsMediaInitialized
+                  0x0029f0                  _SD_SPI_IsWriteProtected
+                  0x002a28                  _SD_SPI_MediaInitialize
+ .text            0x003332        0x146 build/default/production/mcc_generated_files/spi1_driver.o
+                  0x003332                  _spi1_close
+                  0x00333a                  _spi1_open
+                  0x003390                  _spi1_exchangeByte
+                  0x0033aa                  _spi1_exchangeBlock
+                  0x0033dc                  _spi1_writeBlock
+                  0x00340a                  _spi1_readBlock
+                  0x00343a                  _spi1_writeByte
+                  0x003446                  _spi1_readByte
+                  0x003450                  _spi1_isr
+                  0x00346c                  _spi1_setSpiISR
+ .text            0x003478         0xf8 build/default/production/mcc_generated_files/fatfs/diskio.o
+                  0x003478                  _disk_status
+                  0x0034b4                  _disk_initialize
+                  0x0034de                  _disk_read
+                  0x003518                  _disk_write
+                  0x003552                  _disk_ioctl
+ .text            0x003570         0x7a build/default/production/mcc_generated_files/pin_manager.o
+                  0x003570                  _PIN_MANAGER_Initialize
+ .text            0x0035ea         0x60 build/default/production/main.o
+                  0x0035ea                  _main
+ .text            0x00364a         0x5a build/default/production/mcc_generated_files/fatfs/fatfs_demo.o
+                  0x00364a                  _FatFsDemo_Tasks
+ .text            0x0036a4         0x3a build/default/production/mcc_generated_files/clock.o
+                  0x0036a4                  _CLOCK_Initialize
 
-.dinit            0x0036d2         0x36
- .dinit           0x0036d2         0x36 data_init
+.dinit            0x0036de         0x36
+ .dinit           0x0036de         0x36 data_init
 
-.text             0x003708         0x62
- .text            0x003708         0x32 build/default/production/mcc_generated_files/drivers/spi_master.o
-                  0x003708                  _SDFAST_open
-                  0x003712                  _SDSLOW_open
-                  0x00371c                  _spi_master_open
- .text            0x00373a         0x16 build/default/production/mcc_generated_files/traps.o
-                  0x00373a                  _TRAPS_halt_on_error
- .text            0x003750          0xc build/default/production/mcc_generated_files/system.o
-                  0x003750                  _SYSTEM_Initialize
- .text            0x00375c          0x8 build/default/production/mcc_generated_files/mcc.o
-                  0x00375c                  _OSCILLATOR_Initialize
- .text            0x003764          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
-                  0x003764                  _INTERRUPT_Initialize
+.text             0x003714         0x62
+ .text            0x003714         0x32 build/default/production/mcc_generated_files/drivers/spi_master.o
+                  0x003714                  _SDFAST_open
+                  0x00371e                  _SDSLOW_open
+                  0x003728                  _spi_master_open
+ .text            0x003746         0x16 build/default/production/mcc_generated_files/traps.o
+                  0x003746                  _TRAPS_halt_on_error
+ .text            0x00375c          0xc build/default/production/mcc_generated_files/system.o
+                  0x00375c                  _SYSTEM_Initialize
+ .text            0x003768          0x8 build/default/production/mcc_generated_files/mcc.o
+                  0x003768                  _OSCILLATOR_Initialize
+ .text            0x003770          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x003770                  _INTERRUPT_Initialize
