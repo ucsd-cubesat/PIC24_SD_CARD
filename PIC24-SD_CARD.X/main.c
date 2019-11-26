@@ -55,6 +55,7 @@ int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    LED_BLUE_SetLow();
     FATFS drive;
     FIL file;
     UINT actualLength;
@@ -66,19 +67,17 @@ int main(void)
 
     if (f_mount(&drive,"0:",1) == FR_OK)
     {
-        LED_SetHigh();
         if (f_open(&file, "JASON.TXT", FA_WRITE | FA_CREATE_NEW ) == FR_OK)
         {
             f_write(&file, data, sizeof(data)-1, &actualLength );
             f_close(&file);
-            LED_SetLow();
         }
 
         f_mount(0,"0:",0);
     }
     while (1)
     {
-        LED_SetHigh();
+        LED_BLUE_SetHigh();
     }
      return 1;
 }

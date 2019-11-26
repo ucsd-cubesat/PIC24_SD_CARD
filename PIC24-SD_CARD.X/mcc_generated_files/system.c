@@ -45,12 +45,12 @@
 #include "pin_manager.h"
 #include "clock.h"
 #include "system.h"
-#include "fatfs/ff.h"
 #include "spi1_driver.h"
-#include "sd_spi/sd_spi.h"
+#include "fatfs/ff.h"
 #include "drivers/spi_master.h"
 #include "interrupt_manager.h"
 #include "traps.h"
+#include "sd_spi/sd_spi.h"
 
 void SYSTEM_Initialize(void)
 {

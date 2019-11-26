@@ -50,12 +50,12 @@
 #include "pin_manager.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include "fatfs/ff.h"
 #include "spi1_driver.h"
-#include "sd_spi/sd_spi.h"
+#include "fatfs/ff.h"
 #include "drivers/spi_master.h"
 #include "interrupt_manager.h"
 #include "traps.h"
+#include "sd_spi/sd_spi.h"
 
 #ifndef _XTAL_FREQ
 #define _XTAL_FREQ  4000000UL

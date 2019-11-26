@@ -640,13 +640,13 @@
 #define SCK1OUT_SetDigitalOutput() _TRISC4 = 0
 /**
   @Summary
-    Sets the GPIO pin, RC8, high using LATC8.
+    Sets the GPIO pin, RC7, high using LATC7.
 
   @Description
-    Sets the GPIO pin, RC8, high using LATC8.
+    Sets the GPIO pin, RC7, high using LATC7.
 
   @Preconditions
-    The RC8 must be set to an output.
+    The RC7 must be set to an output.
 
   @Returns
     None.
@@ -656,21 +656,21 @@
 
   @Example
     <code>
-    // Set RC8 high (1)
-    LED_SetHigh();
+    // Set RC7 high (1)
+    LED_BLUE_SetHigh();
     </code>
 
 */
-#define LED_SetHigh()          _LATC8 = 1
+#define LED_BLUE_SetHigh()          _LATC7 = 1
 /**
   @Summary
-    Sets the GPIO pin, RC8, low using LATC8.
+    Sets the GPIO pin, RC7, low using LATC7.
 
   @Description
-    Sets the GPIO pin, RC8, low using LATC8.
+    Sets the GPIO pin, RC7, low using LATC7.
 
   @Preconditions
-    The RC8 must be set to an output.
+    The RC7 must be set to an output.
 
   @Returns
     None.
@@ -680,21 +680,21 @@
 
   @Example
     <code>
-    // Set RC8 low (0)
-    LED_SetLow();
+    // Set RC7 low (0)
+    LED_BLUE_SetLow();
     </code>
 
 */
-#define LED_SetLow()           _LATC8 = 0
+#define LED_BLUE_SetLow()           _LATC7 = 0
 /**
   @Summary
-    Toggles the GPIO pin, RC8, using LATC8.
+    Toggles the GPIO pin, RC7, using LATC7.
 
   @Description
-    Toggles the GPIO pin, RC8, using LATC8.
+    Toggles the GPIO pin, RC7, using LATC7.
 
   @Preconditions
-    The RC8 must be set to an output.
+    The RC7 must be set to an output.
 
   @Returns
     None.
@@ -704,18 +704,18 @@
 
   @Example
     <code>
-    // Toggle RC8
-    LED_Toggle();
+    // Toggle RC7
+    LED_BLUE_Toggle();
     </code>
 
 */
-#define LED_Toggle()           _LATC8 ^= 1
+#define LED_BLUE_Toggle()           _LATC7 ^= 1
 /**
   @Summary
-    Reads the value of the GPIO pin, RC8.
+    Reads the value of the GPIO pin, RC7.
 
   @Description
-    Reads the value of the GPIO pin, RC8.
+    Reads the value of the GPIO pin, RC7.
 
   @Preconditions
     None.
@@ -730,18 +730,18 @@
     <code>
     uint16_t portValue;
 
-    // Read RC8
-    postValue = LED_GetValue();
+    // Read RC7
+    postValue = LED_BLUE_GetValue();
     </code>
 
 */
-#define LED_GetValue()         _RC8
+#define LED_BLUE_GetValue()         _RC7
 /**
   @Summary
-    Configures the GPIO pin, RC8, as an input.
+    Configures the GPIO pin, RC7, as an input.
 
   @Description
-    Configures the GPIO pin, RC8, as an input.
+    Configures the GPIO pin, RC7, as an input.
 
   @Preconditions
     None.
@@ -754,18 +754,18 @@
 
   @Example
     <code>
-    // Sets the RC8 as an input
-    LED_SetDigitalInput();
+    // Sets the RC7 as an input
+    LED_BLUE_SetDigitalInput();
     </code>
 
 */
-#define LED_SetDigitalInput()  _TRISC8 = 1
+#define LED_BLUE_SetDigitalInput()  _TRISC7 = 1
 /**
   @Summary
-    Configures the GPIO pin, RC8, as an output.
+    Configures the GPIO pin, RC7, as an output.
 
   @Description
-    Configures the GPIO pin, RC8, as an output.
+    Configures the GPIO pin, RC7, as an output.
 
   @Preconditions
     None.
@@ -778,12 +778,12 @@
 
   @Example
     <code>
-    // Sets the RC8 as an output
-    LED_SetDigitalOutput();
+    // Sets the RC7 as an output
+    LED_BLUE_SetDigitalOutput();
     </code>
 
 */
-#define LED_SetDigitalOutput() _TRISC8 = 0
+#define LED_BLUE_SetDigitalOutput() _TRISC7 = 0
 
 /**
     Section: Function Prototypes
