@@ -50,18 +50,20 @@
 #include "mcc_generated_files/pin_manager.h"
 #include "mcc_generated_files/fatfs/ff.h"
 #include "mcc_generated_files/sd_spi/sd_spi.h"
- 
+#include <stdio.h>
+#define DELAY 16000
 int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    T1CON = 0x8030; // set timer 1 prescaler to 1:256 /TCLK/2
     LED_BLUE_SetLow();
     FATFS drive;
     FIL file;
     UINT actualLength;
-    char data[] = "Why is the pic24 so annoying?!";
+    char data[] = "This is a very very very very  very very very very very very very very very very very very very long test message";
     if( SD_SPI_IsMediaPresent() == false)
-    {
+    { 
         return 1 ;
     }
 
@@ -71,15 +73,30 @@ int main(void)
         {
             f_write(&file, data, sizeof(data)-1, &actualLength );
             f_close(&file);
+           
         }
-
+        else
+        {
+            printf("Could not write to SD card");
+        }
         f_mount(0,"0:",0);
     }
-    while (1)
-    {
-        LED_BLUE_SetHigh();
+    else
+    {  
+        printf("Could not mount SD card");
     }
-     return 1;
+    printf("\nSuccessfully written to SD card");
+    TMR1 = 0;
+    LED_BLUE_SetHigh();
+    while (TMR1 < DELAY)
+    {
+     //just wait
+    }
+     LED_BLUE_SetLow();
+     while(1)
+     {
+         
+     }
 }
 /**
  End of File
